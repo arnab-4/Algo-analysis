@@ -26,9 +26,9 @@ export default function Home() {
       <NextSeo
         title="Home | Algo Analysis"
         description="A algorithm visualizer for understanding algorithms"
-        canonical={`https://algospace.vercel.app/`}
+        canonical={`https://algo-analysis.netlify.app/`}
         openGraph={{
-          url: `https://algospace.vercel.app/`,
+          url: `https://algo-analysis.netlify.app/`,
           title: "Home | Algo Analysis",
           description: "A algorithm visualizer for understanding algorithms",
           profile: {
