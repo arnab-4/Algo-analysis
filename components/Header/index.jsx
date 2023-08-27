@@ -31,7 +31,7 @@ export default function Header() {
         <div className="h-full w-4 bg-bg-1 absolute t-0 l-0 ml-[-2px]"></div>
         <div className="px-[1.5rem] py-[1.1rem] flex items-center relative ">
           <div className="font-space text-sm text-green">
-            {dateFormat(now, "mm/dd")}
+            {dateFormat(now, "dd/mm/yy")}
           </div>
           <div className="w-[16px] h-[38px] bg-cyan ml-[1.5rem]"></div>
           <div className="text-text-1 font-space uppercase ml-[10px] flex items-center leading-[105%] text-[1.3rem]">

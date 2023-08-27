@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo";
 import { useSelector } from "react-redux";
 
-import Data from "/public/data/algorithmData.json";
+import Data from "../../public/data/algorithmData.json";
 
 export default function Seo({ category, id }) {
   let algoName = useSelector((state) => state.page.algoName);
@@ -14,9 +14,9 @@ export default function Seo({ category, id }) {
           <NextSeo
             title={currAlgoData.metaTitle}
             description={currAlgoData.description}
-            canonical={`https://algospace.vercel.app/${category}/${id}`}
+            // canonical={`https://algospace.vercel.app/${category}/${id}`}
             openGraph={{
-              url: `https://algospace.vercel.app/${category}/${id}`,
+              // url: `https://algospace.vercel.app/${category}/${id}`,
               title: currAlgoData.metaTitle,
               description: currAlgoData.description,
               profile: {

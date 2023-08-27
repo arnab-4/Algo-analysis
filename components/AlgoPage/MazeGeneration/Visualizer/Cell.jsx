@@ -35,6 +35,8 @@ const Cell = (props) => {
   if (x - 1 === nextX || y - 1 === nextY)
     targetCellId = `cell-x${nextX}-y${nextY}`;
   else targetCellId = `cell-x${x}-y${y}`;
+  
+  
 
   // Deciding where to place wall to generate grid
   // if (y === cellCount - 1 && x === cellCount - 1) className += "";

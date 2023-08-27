@@ -8,7 +8,7 @@ String.prototype.toProperCase = function () {
 export const ToProperCase = (algoId) => {
   let AlgoName = "" + algoId;
   AlgoName = AlgoName.replace(/-/g, " ");
-  return AlgoName.toProperCase();
+  return AlgoName.toUpperCase();
 };
 
 // MakeDelay Function

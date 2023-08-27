@@ -9,7 +9,7 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 export default function Terrain() {
   var cols, rows;
   var w = 2500,
-    h = 1000;
+    h = 1200;
   var scl = 32;
   var flying = 0;
   var terrain = [];
@@ -38,27 +38,33 @@ export default function Terrain() {
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
-        terrain[x][y] = p5.map(p5.noise(xoff, yoff), 0, 1, -350, 350);
+        terrain[x][y] = p5.map(p5.noise(xoff, yoff), 0, 1, -350, 350); 
+        // terrain[x][y] = p5.map(p5.noise(xoff, yoff), 0, 1, -350, 2350);  if we do this code it'll look awesome . So make sure which you want and it feels like our kids Cartoon Ben 10. if the color is changes into the blue .  
+
         xoff += 0.1;
       }
-      yoff += 0.1;
+      yoff += 0.1; // Make xoff = 0.3 and yoff = 0.3 its makes more attractive ; some changes may occured depends upon the function ; 
     }
 
+    
+
     p5.background(0, 0, 0, 0);
-    p5.translate(0, 300);
+    p5.translate(0,300)
     p5.frameRate(22);
     p5.rotateX(PI / 3);
     p5.stroke(30, 200, 57, 150);
     p5.fill(30, 180, 57, 200);
     p5.translate(-w / 2, -h / 2);
-    var curveCreator = 100;
+    // var curveCreator = 100;
     for (var y = 0; y < rows - 1; y++) {
       p5.beginShape(p5.TRIANGLE_STRIP);
       for (var x = 0; x < cols; x++) {
         p5.vertex(x * scl, y * scl, terrain[x][y]);
         p5.vertex(x * scl, (y + 1) * scl, terrain[x][y + 1]);
+       
       }
       p5.endShape();
+
     }
   };
 
