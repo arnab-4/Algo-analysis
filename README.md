@@ -26,11 +26,11 @@ Follow these steps to get the project up and running on your local machine:
 
 1. **Clone the Repository**: Start by cloning this repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/algorithm-analysis-website.git
+   git clone https://github.com/arnab-4/Algo-analysis.git
 
 2. **Navigate to the Project Directory**: Move into the project directory.
    ```bash
-   cd algorithm-analysis-website
+   cd Algo-analysis
 3. **Install Dependencies**: Install the project dependencies using your package manager (npm or yarn).
    ```bash
    npm install
